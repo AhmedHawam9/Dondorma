@@ -82,15 +82,16 @@ nav img{
   margin: 0 10px;
 }
 .my-nav-dark {
-  background-color: #0c0118 !important;
+  background-color: #fff !important;
   width: 100%;
+  box-shadow: 2px 2px 7px 2px #dedede;
   padding-bottom: 25px;
   padding-top: 25px;
   transition: .7s;
 }
 
 .my-nav-dark .nav-link {
-  color: #FFF !important;
+  color: #3E087A !important;
 }
 .phonedesign .texthead{
   margin-top: 20rem !important;
@@ -121,7 +122,7 @@ nav img{
 }
 .navbar-nav li a:hover{
   /* border-bottom: 2px solid #FB6158; */
-  color: rgb(211, 211, 211) !important;
+  color: #000 !important;
 }
 .phonedesign{
   color: #3E087A;
@@ -172,6 +173,14 @@ nav img{
   background-color: #FB6158 ;
   border-radius: 30px;
   transform: translate(-25%, 50%);
+}
+.section4 .btn-download:hover, .section7 .btn-download:hover{
+    color: #fb6158 !important;
+}
+.hvr-rectangle-out:before{
+    background: #fff;
+    border-radius: 30px;
+    transition-duration: .5s;
 }
 .sec6{
   background-image: url("../media/image/backsec6.svg");
@@ -356,28 +365,33 @@ footer .footer-bottom .my-heart {
     width: 90%;
   }
 }
+
+/*Tablet style*/
 @media (min-width: 768px) and (max-width: 991.98px) {
   .navbar {
-    background-color: #0c0118 !important;
-    color: #fff !important;
+    background-color: #fff !important;
+    color: #3E087A !important;
   }
   .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
-    color: #fff !important;
+    color: #3E087A !important;
   }
   .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-    color: #fff !important;
+    color: #3E087A !important;
   }
   .nav-link {
-    color: #FFF !important;
+    color: #3E087A !important;
+  }
+  nav img{
+      width:12%;
   }
   .section1::before{
     background: none;
   }
   .navbar-light .navbar-toggler{
-    border: 2px solid #fff !important;
+    border: 2px solid #000 !important;
   }
   .navbar-light .navbar-toggler-icon{
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0,0,0, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
   }
   .navbar .navbar-collapse .navbar-nav .nav-link.active::before {
     content: '';
@@ -431,36 +445,59 @@ footer .footer-bottom .my-heart {
   .section7 .btn-download{
     transform: translate(-10%, 50%);
   }
+  .btn-download-app{
+          margin-top: 8rem;
+  }
+  .sec6{
+      height: 500px;
+  }
+    .col-links{
+      margin: 0 auto !important;
+  }
+  .accordion {
+      margin-top: 3rem !important;
+  } 
+  footer .col-links:last-child ul{
+      margin-right: 6rem;
+  }
   footer{
     margin-top: 5rem;
   }
   footer .logo-col ul{
     margin: 0;
   }
+  .accordion a{
+      color: #fff !important;
+  }
 }
+/*Tablet style*/
 
-@media  only screen and (max-width: 767.99px) {
+/*between mobile and tablet style*/
+@media (min-width: 576px) and (max-width: 760px) {
   .navbar {
-    background-color: #0c0118 !important;
-    color: #fff !important;
+    background-color: #fff !important;
+    color: #3E087A !important;
+  }
+  nav img{
+      width:15%;
   }
   .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
-    color: #fff !important;
+    color: #3E087A !important;
   }
   .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-    color: #fff !important;
+    color: #3E087A !important;
   }
   .nav-link {
-    color: #FFF !important;
+    color: #3E087A !important;
   }
   .section1::before{
     background: none;
   }
   .navbar-light .navbar-toggler{
-    border: 2px solid #fff !important;
+    border: 2px solid #000 !important;
   }
   .navbar-light .navbar-toggler-icon{
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0,0,0, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
   }
   .navbar .navbar-collapse .navbar-nav .nav-link.active::before {
     content: '';
@@ -471,6 +508,118 @@ footer .footer-bottom .my-heart {
     background-color: #FB6158;
     border-radius: 25px;
     transform: translate(15px, 0px);
+  }
+  .my-btn{
+    display: flex;
+    margin-right: 3rem !important;
+    margin-top: 1.5rem;
+  }
+  .phonedesign{
+    margin-top: 0;
+  }
+  .phonedesign h2{
+      width:100%;
+  }
+  .phonedesign p{
+      width:100%;
+  }
+  .phonehead img {
+    margin-top: 10rem !important;
+    width: 130%;
+  }
+  .phonedesign .texthead {
+    margin-top: 10rem !important;
+  }
+  .btn-download{
+    width: 70%;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .section4 h2{
+    font-family: bold;
+    width: 100%;
+  }
+  .section4 p{
+    font-family: Regular;
+    width: 100%;
+  }
+  .section7 h2{
+    font-family: bold;
+    width: 100%;
+  }
+  .section7 p{
+    font-family: Regular;
+    width: 100%;
+  }
+  .section4 .btn-download{
+    transform: translate(-10%, 50%);
+  }
+  .section7 .btn-download{
+    transform: translate(-10%, 50%);
+  }
+  .btn-download-app{
+      margin-top: 6rem;
+  }
+  .sec6{
+      height: 500px;
+  }
+    .col-links{
+      margin: 0 auto !important;
+  }
+  .accordion {
+      margin-top: 3rem !important;
+  } 
+  footer .col-links:last-child ul{
+      margin-right: 6rem;
+  }
+  footer{
+    margin-top: 5rem;
+  }
+  footer .logo-col ul{
+    margin: 0;
+  }
+  .accordion a{
+      color: #fff !important;
+  }
+}
+/*between mobile and tablet style*/
+
+/*Mobile style*/
+@media  only screen and (max-width: 576px) {
+  .navbar {
+    background-color: #fff !important;
+    color: #3E087A !important;
+  }
+  nav img{
+      width:15%;
+  }
+  .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+    color: #3E087A !important;
+  }
+  .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: #3E087A !important;
+  }
+  .nav-link {
+    color: #3E087A !important;
+  }
+  .section1::before{
+    background: none;
+  }
+  .navbar-light .navbar-toggler{
+    border: 2px solid #000 !important;
+  }
+  .navbar-light .navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0,0,0, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+  }
+  .navbar .navbar-collapse .navbar-nav .nav-link.active::before {
+    content: '';
+    position: absolute;
+    bottom: 0%;
+    height: 3px;
+    width: 150%;
+    background-color: #FB6158;
+    border-radius: 25px;
+    transform: translate(16px, 0px);
   }
   .my-btn{
     display: flex;
@@ -519,7 +668,7 @@ footer .footer-bottom .my-heart {
     margin-top: 5rem;
   }
   .sec6{
-    height: 300px;
+    height: 350px;
   }
   .btn-download{
     width: 70%;
@@ -572,4 +721,22 @@ footer .footer-bottom .my-heart {
     width: 40%;
     margin: 15px auto;
   }
+  .accordion a{
+      color: #fff !important;
+  }
 }
+/*Mobile style*/
+
+/*4K style*/
+@media (min-width: 1600px) and (max-width: 2600px) {
+    .sec6{
+        height: 900px;
+    }
+    .btn-download-app{
+        margin-top: 13rem;
+    }
+    footer{
+        height: 780px;
+    }
+}
+/*4K style*/
